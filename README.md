@@ -1,6 +1,8 @@
 Facebook Tweaks + Cocoapods issue
 =================================
 
+[Issue on the CocoaPods repo](https://github.com/CocoaPods/CocoaPods/issues/1934), [issue on the Tweaks repo](https://github.com/facebook/Tweaks/issues/9).
+
 I experienced an unexpected behaviour using [Tweaks](https://github.com/facebook/Tweaks) through [CocoaPods](http://cocoapods.org/) in a project with user defined [build configurations](https://developer.apple.com/library/ios/recipes/xcode_help-project_editor/articles/basingbuildconfigurationsonconfigurationfiles.html):
 
 **Given** a project using Tweaks through CocoaPods, with a user defined build configuration, and calling `FBTweakInline` at least once.
