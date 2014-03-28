@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import <FBTweakInline.h>
+#import "FBTweakInline.h"
 
 @implementation AppDelegate
 
