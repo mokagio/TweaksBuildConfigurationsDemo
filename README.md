@@ -1,13 +1,7 @@
 Facebook Tweaks + Cocoapods issue
 =================================
 
-### Premise
-
-If I add [Tweaks](https://github.com/facebook/Tweaks) manually instead than with CocoaPods it links, that's why I'm opening the issue on this repo.
-
-### Issue
-
-I experienced an unexpected behaviour using Tweaks through CocoaPods in a project with user defined [build configurations](https://developer.apple.com/library/ios/recipes/xcode_help-project_editor/articles/basingbuildconfigurationsonconfigurationfiles.html):
+I experienced an unexpected behaviour using [Tweaks](https://github.com/facebook/Tweaks) through [CocoaPods](http://cocoapods.org/) in a project with user defined [build configurations](https://developer.apple.com/library/ios/recipes/xcode_help-project_editor/articles/basingbuildconfigurationsonconfigurationfiles.html):
 
 **Given** a project using Tweaks through CocoaPods, with a user defined build configuration, and calling `FBTweakInline` at least once.
 
@@ -45,3 +39,5 @@ If I manually, or through the `post_install` hook, add `FB_TWEAK_ENABLED=1` to m
 But then if I set `FB_TWEAK_ENABLED=0` it doesn't build anymore.
 
 I made [this demo repo](https://github.com/mokagio/TweaksBuildConfigurationsDemo) to reproduce the issue. Just play around with the [`Podfile`](https://github.com/mokagio/TweaksBuildConfigurationsDemo/blob/master/Podfile) and the [`post_install`](https://github.com/mokagio/TweaksBuildConfigurationsDemo/blob/master/post_install.rb) hook to see it in action.
+
+If I add [Tweaks](https://github.com/facebook/Tweaks) manually instead than with CocoaPods it links, that's why I address the issue as a CocoaPods one. Have a look the [`no-cocoapods` branch](https://github.com/mokagio/TweaksBuildConfigurationsDemo/tree/no-cocoapods).
