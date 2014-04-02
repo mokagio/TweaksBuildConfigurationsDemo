@@ -398,6 +398,72 @@
 			};
 			name = Beta;
 		};
+		3F431F1118EC3F4E00D49BFB /* QA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = QA;
+		};
+		3F431F1218EC3F4E00D49BFB /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5001213B4A394B5DA6B6DE6B /* Pods-TweaksBuildConfigurationsDemo.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TweaksBuildConfigurationsDemo/TweaksBuildConfigurationsDemo-Prefix.pch";
+				INFOPLIST_FILE = "TweaksBuildConfigurationsDemo/TweaksBuildConfigurationsDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = QA;
+		};
+		3F431F1318EC3F4E00D49BFB /* QA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TweaksBuildConfigurationsDemo.app/TweaksBuildConfigurationsDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TweaksBuildConfigurationsDemo/TweaksBuildConfigurationsDemo-Prefix.pch";
+				INFOPLIST_FILE = "TweaksBuildConfigurationsDemoTests/TweaksBuildConfigurationsDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = QA;
+		};
 		3F83C61218E4DE3100EB5346 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -547,6 +613,7 @@
 				3F83C61218E4DE3100EB5346 /* Debug */,
 				3F27756B18E4E09F001B598E /* Beta */,
 				3F83C61318E4DE3100EB5346 /* Release */,
+				3F431F1118EC3F4E00D49BFB /* QA */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -557,6 +624,7 @@
 				3F83C61518E4DE3100EB5346 /* Debug */,
 				3F27756C18E4E09F001B598E /* Beta */,
 				3F83C61618E4DE3100EB5346 /* Release */,
+				3F431F1218EC3F4E00D49BFB /* QA */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -567,6 +635,7 @@
 				3F83C61818E4DE3100EB5346 /* Debug */,
 				3F27756D18E4E09F001B598E /* Beta */,
 				3F83C61918E4DE3100EB5346 /* Release */,
+				3F431F1318EC3F4E00D49BFB /* QA */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
